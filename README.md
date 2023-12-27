@@ -1,4 +1,4 @@
-# Recipe Blog
+# Yummy Recipes Blog
 
 This is a community blog where everyone has access to create and read their favorite Recipes.
 We believe that everyone has their favorite recipe that can be shared to others for the sake of healthy cooking tips.
