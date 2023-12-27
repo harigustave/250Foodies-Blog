@@ -4,15 +4,23 @@
         <%- include('./partials/nav.ejs') %>
 
         <div class="blogs content">
-            <h2 style="color: brown;text-decoration: underline;">LIST OF BLOGS</h2>
+            <h2 style="color: black;text-decoration: none;">LIST OF AVAILABLE RECIPES</h2>
             <% if (blogs.length>0){%>
                 <% blogs.forEach(blog => {%>
-                    <h3 class="title">
-                        <%= blog.title %>
-                    </h3>
-                    <p class="snippet">
-                        <%= blog.snippet %>
-                    </p>
+                    
+                    <a clas="single" href="/blogs/<%= blog._id %>">
+                        <h3 class="title">
+                            <%= blog.title %>
+                        </h3>
+                        <p class="snippet">
+                            <%= blog.snippet %>
+                        </p>
+                        <p class="creationdate" style="font-size: 12px;color: crimson;font-weight: bold;">
+                            <%= blog.createdAt %>
+                        </p>
+                    </a>
+                  
+                    <hr/>
                 <%}) %>
             <% } else{ %>
                 <h4>Ooops, No Blogs Available...</h4>

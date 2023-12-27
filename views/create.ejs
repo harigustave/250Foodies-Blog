@@ -4,14 +4,14 @@
         <%- include('./partials/nav.ejs') %>
 
         <div class="create-blog content">
-            <h2 style="color: brown;text-decoration: underline;">CREATE NEW BLOGS</h2>
-            <form>
-                <label for="title">Blog Title:</label>
-                <input type="text" id="title" required>
-                <label for="snippet">Blog Snippet:</label>
-                <input type="text" id="snippet" required>
-                <label for="body">Blog Contents:</label>
-                <textarea id="body" required></textarea>
+            <h2 style="color: black;text-decoration: none;">CREATE NEW RECIPE</h2>
+            <form action="/blogs" method="POST">
+                <label for="title">Recipe Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="snippet">Recipe Snippet:</label>
+                <input type="text" id="snippet" name="snippet" required>
+                <label for="body">Recipe Contents:</label>
+                <textarea id="body" name="body" required></textarea>
                 <button>Submit</button>
             </form>
         </div>
