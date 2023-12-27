@@ -12,6 +12,7 @@ The blog is primarly made by the following:
 2. ExpressJS Framework
 2. JavaScript
 3. EJS (Embedded JavaScript Templating)
+4. ExpressRouter & MVC
 4. HTML
 5. CSS
 6. MongoDB (Managed and Running in AWS cloud)
